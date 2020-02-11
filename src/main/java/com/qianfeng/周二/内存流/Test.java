@@ -10,11 +10,16 @@ public class Test {
         String qf = "QIANFENG";
         ByteArrayInputStream byteArrayInputStream = new ByteArrayInputStream(qf.getBytes());
         ByteArrayOutputStream byteArrayOutputStream = new ByteArrayOutputStream();
-        int x;
-        while (-1 != (x = byteArrayInputStream.read())) {
-            byteArrayOutputStream.write(Character.toLowerCase(x));
-            System.err.println(byteArrayOutputStream.toString());
+        int t;// 读取一个字节，这里读到的是二进制数据转换成的十进制数据
+        // t实际上就是一个字符
+        while (-1 != (t = byteArrayInputStream.read())) {
+//            char c = (char) t; // int类型转换成char
+            // 把字符小写，既然大写字母转小写字母
+            t += 32;// 直接大写字母转换成小写字母
+            // 小的反而大，大的反而小
+            byteArrayOutputStream.write(t);
+            System.err.println(byteArrayOutputStream.toString());// 每次都输出
         }
-        System.err.println(byteArrayOutputStream.toString());
+        System.err.println(byteArrayOutputStream.toString());// 完整的输出一次
     }
 }

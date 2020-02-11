@@ -6,7 +6,6 @@ public class CizhuanHousing implements ShimizuHousing {
     public CizhuanHousing(ShimizuHousing shimizuHousing) {
         this.shimizuHousing = shimizuHousing;
     }
-
     @Override
     public void decoration() {
         shimizuHousing.decoration();

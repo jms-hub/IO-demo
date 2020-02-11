@@ -1,6 +1,8 @@
 package com.qianfeng.周二.理解装饰者设计模式;
 
 public class MubanHousing implements ShimizuHousing {
+
+    // 定义一个清水房成员，最大的，所以不管外面传什么，我都能接
     private ShimizuHousing shimizuHousing;
 
     public MubanHousing(ShimizuHousing shimizuHousing) {
@@ -8,8 +10,8 @@ public class MubanHousing implements ShimizuHousing {
     }
 
     @Override
-    public void decoration() {
-        shimizuHousing.decoration();
+    public void decoration() {// 木板房的装修方法
+        shimizuHousing.decoration();// 基装房先来装修一波
         System.err.println("我的地板贴木板");
     }
 }
