@@ -5,6 +5,7 @@ import java.io.FileReader;
 import java.io.FileWriter;
 import java.util.Properties;
 
+
 public class Test {
     public static void main(String[] args) throws Exception {
         Properties properties = System.getProperties();// 系统文件属性类
