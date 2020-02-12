@@ -14,7 +14,7 @@ public class Test2 {
             }
         });
         futureTask.run();// 开启线程，让线程处于就绪状态！
-        String res = futureTask.get();// 获取线程执行完毕之后的返回值
+        String res = futureTask.get();// 获取线程执行完毕之后的返回值，一直会等到结果出来，才会离开，才会继续往后执行
         System.err.println("线程运行完毕之后的返回值是："+res);// 也就是说FutureTask是包含了线程运行完毕的一个状态
     }
 }
