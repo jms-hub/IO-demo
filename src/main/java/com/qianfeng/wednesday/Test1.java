@@ -5,7 +5,14 @@ public class Test1 {
         Runnable runnable = new Runnable() {// 创建一个Runnable的匿名实现类
             @Override
             public void run() {// 复写Run方法
-                System.err.println("我是Runnable创建的线程");
+                for (int x = 0; x < 101; x++) {
+                    System.err.println("随堂视频上传：" + x + "%");
+                    try {
+                        Thread.sleep(50);
+                    } catch (InterruptedException e) {
+                        e.printStackTrace();
+                    }
+                }
             }
         };
         Thread thread = new Thread(runnable, "线程A");// 把Runnable实例传入Thread的构造函数
