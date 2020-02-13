@@ -6,7 +6,7 @@ import lombok.Data;
 /**
  * 作者：黎杭
  * 日期：2020/2/13
- * 模式数据，就是来自日本的娃娃
+ * 模拟数据，就是来自日本的娃娃
  */
 @Data
 public class Doll {
