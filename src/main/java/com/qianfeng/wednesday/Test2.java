@@ -12,7 +12,6 @@ public class Test2 {
             public String call() throws Exception {
                 for (int x = 0; x < 101; x++) {
                     System.err.println("迅雷便下载边看" + x + "%");
-
                     System.err.println(Thread.currentThread().getName());
                     Thread.sleep(50);// 沉睡0.1秒
                 }
@@ -33,7 +32,5 @@ public class Test2 {
         System.err.println("后面的是否输出");
         System.err.println("线程是否被取消？" + futureTask.isCancelled());
         System.err.println("线程是已完成？" + futureTask.isDone());
-
-
     }
 }
