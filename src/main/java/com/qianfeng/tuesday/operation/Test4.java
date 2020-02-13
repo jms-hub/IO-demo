@@ -15,7 +15,6 @@ public class Test4 {
         Student student3 = new Student("王五", 2003, 100.0);
         FileOutputStream fileOutputStream = new FileOutputStream(new File("T:\\2020年春逆战\\第一周-IO、多线程、网络通信\\2-IO-2\\student.txt"));
         ObjectOutputStream objectOutputStream = new ObjectOutputStream(fileOutputStream);
-
         // 把三个学生放到集合里边得了
         Set<Object> set = new HashSet<>();
         set.add(student);// 把学生放到集合

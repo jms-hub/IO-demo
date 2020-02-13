@@ -4,8 +4,9 @@ import lombok.Data;
 
 import java.io.Serializable;
 
-@Data
+
 public class Student implements Serializable {
+   
     public Student(String name, Integer id, Double score) {
         this.name = name;
         this.id = id;
