@@ -13,4 +13,7 @@ public class Test6 {
         Thread t2 = new Thread(new DeadLock(), "线程2");
         t2.start();// 再开启一个线程
     }
+
+
+
 }
