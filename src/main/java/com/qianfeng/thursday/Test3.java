@@ -12,7 +12,6 @@ public class Test3 {
             // 调用卖票的方法
             sellTickets();// 进行卖票操作
         }
-
         // 定义一个同步非静态方法
         public synchronized void sellTickets() {
             if (tickets > 0) {// 还有火车票,假如说此时的票还有 1张
