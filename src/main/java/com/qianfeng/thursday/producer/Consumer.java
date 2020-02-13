@@ -1,4 +1,7 @@
-package com.qianfeng.thursday;
+package com.qianfeng.thursday.producer;
+
+import com.qianfeng.thursday.Doll;
+
 /**
  * 作者：黎杭
  * 日期：2020/2/13

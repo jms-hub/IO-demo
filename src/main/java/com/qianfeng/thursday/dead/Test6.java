@@ -1,5 +1,7 @@
-package com.qianfeng.thursday;
+package com.qianfeng.thursday.dead;
 
+
+import com.qianfeng.thursday.dead.DeadLock;
 
 /**
  * 作者：黎杭

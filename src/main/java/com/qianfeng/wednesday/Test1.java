@@ -13,7 +13,6 @@ public class Test1 {
                         e.printStackTrace();
                     }
                 }
-
             }
         };
         Thread thread = new Thread(runnable, "线程A");// 把Runnable实例传入Thread的构造函数

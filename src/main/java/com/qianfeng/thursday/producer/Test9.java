@@ -1,4 +1,4 @@
-package com.qianfeng.thursday;
+package com.qianfeng.thursday.producer;
 
 
 /**
