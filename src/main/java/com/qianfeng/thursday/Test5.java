@@ -1,5 +1,6 @@
 package com.qianfeng.thursday;
 
+import java.util.concurrent.Executors;
 import java.util.concurrent.locks.ReentrantLock;
 
 /**
@@ -7,6 +8,8 @@ import java.util.concurrent.locks.ReentrantLock;
  * 此时我们使用同步静态方法，去解决临界资源产生的问题
  */
 public class Test5 {
+
+
     static int tickets = 100;// 默认这个火车票是100张，临界资源
     static ReentrantLock reentrantLock = new ReentrantLock();// 创建一个重入锁
     static Runnable runnable = new Runnable() {// 它匿名内部类
@@ -33,6 +36,7 @@ public class Test5 {
             }
         }
     };
+
     public static void main(String[] args) {
         for (int x = 0; x < 1000; x++) {
             new Thread(runnable, "抢票人" + x).start();
