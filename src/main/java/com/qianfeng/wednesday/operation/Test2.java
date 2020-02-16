@@ -27,7 +27,7 @@ public class Test2 {
         Runnable runnable = new Runnable() {
             @Override
             public void run() {
-
+                synchronized ("") {// 使用字符串当个对象锁，进行过山洞同步
                     try {
                         System.out.println(Thread.currentThread().getName() + "开始过山洞了");
                         Thread.sleep(5000);// 过山洞需要5秒
@@ -35,7 +35,7 @@ public class Test2 {
                     } catch (InterruptedException e) {
                         e.printStackTrace();
                     }
-
+                }
             }
         };
         //遍历集合

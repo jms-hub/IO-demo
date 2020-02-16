@@ -1,4 +1,4 @@
-package com.qianfeng.thursday;
+package com.qianfeng.thursday.sellticket;
 
 /**
  * 这个类模仿 1000个人去抢购100张票的案例
